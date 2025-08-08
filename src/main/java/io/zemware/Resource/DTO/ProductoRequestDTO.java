@@ -1,4 +1,4 @@
-package io.zemware.Controller.DTO;
+package io.zemware.Resource.DTO;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.PositiveOrZero;

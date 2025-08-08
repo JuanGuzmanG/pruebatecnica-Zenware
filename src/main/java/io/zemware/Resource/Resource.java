@@ -1,6 +1,6 @@
-package io.zemware.Controller;
+package io.zemware.Resource;
 
-import io.zemware.Controller.DTO.ProductoRequestDTO;
+import io.zemware.Resource.DTO.ProductoRequestDTO;
 import io.zemware.Entity.Producto;
 import io.zemware.Service.ProductoService;
 import jakarta.inject.Inject;
@@ -9,6 +9,7 @@ import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
 
+import java.net.URI;
 import java.util.List;
 
 @Path("/productos")
@@ -27,9 +28,13 @@ public class Resource {
 
     // POST /productos
     @POST
-    public Response crear(@Valid ProductoRequestDTO request){
-        Producto nuevoProducto = productoService.crear(request.getNombre(), request.getPrecio());
-        return Response.status(Response.Status.CREATED).entity(nuevoProducto).build();
+    public Response crear(@Valid ProductoRequestDTO request) {
+        Producto nuevo = productoService.crear(request.getNombre(), request.getPrecio());
+
+        return Response
+                .created(URI.create("/productos/" + nuevo.id))
+                .entity(nuevo)
+                .build();
     }
 
     // GET /productos/{id}

@@ -25,7 +25,7 @@ class ProductTest {
     void aplicarImpuesto_fueraDeRango_lanzaExcepcion() {
         Producto p = new Producto("Monitor", 100.0);
 
-        // Cuando / Entonces: porcentaje > 50 debe lanzar IllegalArgumentException
+        // Cuando: porcentaje > 50 debe lanzar IllegalArgumentException
         IllegalArgumentException ex = assertThrows(IllegalArgumentException.class,
                 () -> p.aplicarImpuesto(60.0));
         assertTrue(ex.getMessage().contains("entre 0 y 50"));
