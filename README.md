@@ -38,7 +38,7 @@ quarkus.hibernate-orm.database.generation=drop-and-create
 
 ## 3 · Ejecutar en modo dev
 
-git clone [<URL_DEL_REPO>](https://github.com/JuanGuzmanG/pruebatecnica-Zenware.git)
+git clone https://github.com/JuanGuzmanG/pruebatecnica-Zenware.git
 cd pruebatecnica
 mvn quarkus:dev
 
