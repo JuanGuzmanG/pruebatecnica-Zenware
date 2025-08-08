@@ -18,23 +18,13 @@ Incluye pruebas unitarias y de API.
 ## 1 · Estructura del proyecto
 
 src/
-├── main/
-│ ├── java/io/zemware/
-│ │ ├── Entity/Producto.java
-│ │ ├── Controller/
-│ │ │ ├── Resource.java
-│ │ │ └── DTO/ProductoRequestDTO.java
-│ │ ├── Service/ProductoService.java
-│ │ └── Exception/
-│ │ ├── NotFoundMapper.java
-│ │ └── ValidationMapper.java
-│ └── resources/application.properties
-├── test/
-│ ├── java/io/zemware/Entity/ProductoTest.java
-│ └── java/io/zemware/Controller/ResourceApiTest.java
-logs/diagnostico.log
-pom.xml
-README.md
+ -  main/java/io/zemware/
+ -  test/
+      java/io/zemware/Entity/ProductoTest.java
+      java/io/zemware/Controller/ResourceApiTest.java
+ - logs/diagnostico.log
+ - pom.xml
+ - README.md
 
 
 ---
