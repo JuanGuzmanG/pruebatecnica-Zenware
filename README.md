@@ -17,15 +17,10 @@ Incluye pruebas unitarias y de API.
 
 ## 1 · Estructura del proyecto
 
-src/
- -  main/java/io/zemware/
- -  test/
-      java/io/zemware/Entity/ProductoTest.java
-      java/io/zemware/Controller/ResourceApiTest.java
- - logs/diagnostico.log
- - pom.xml
- - README.md
-
+src/main/codigo y pruebas
+pom.xml
+README.md
+logs/
 
 ---
 
